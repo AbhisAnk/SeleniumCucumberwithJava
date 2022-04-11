@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 8, 2022 12:36:47 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 11, 2022 08:39:36 PM</span></a>
 </li>
 </ul>
 </div>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">This feature is used to test functionlaities availble on landing page</p>
             <p class="text-sm">
-              <span>12:36:47 PM</span> / <span>30:32:623</span>
+              <span>20:39:36 PM</span> / <span>30:25:750</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">This feature is used to test functionlaities availble on landing page</h5>
-<span class='badge badge-success'>04.08.2022 12:36:47</span>
-<span class='badge badge-danger'>04.08.2022 12:37:20</span>
-<span class='badge badge-default'>30:32:623</span>
+<span class='badge badge-success'>04.11.2022 20:39:36</span>
+<span class='badge badge-danger'>04.11.2022 20:40:02</span>
+<span class='badge badge-default'>30:25:750</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"> I want to use this template for my feature file</div>
@@ -118,7 +118,57 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>This scenario will test login feature of the application</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>This scenario will test signup feature of the application</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_navigates_to_application_landing_page()">
+                <span>Given User navigates to application landing page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_perform_signup_process_with_valid_user_name_and_password()">
+                <span>When User perform signup process with valid userName and password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepDefinitions.LoginSteps.user_should_be_signedup_successfully()">
+                <span>Then User should be signedup successfully</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [Sign up successful.] but found [This user already exist.]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at pageObjects.LandingPage.signupVerification(LandingPage.java:100)
+	at stepDefinitions.LoginSteps.user_should_be_signedup_successfully(LoginSteps.java:55)
+	at ?.User should be signedup successfully(file:///C:/Users/atiwar12/Documents/CucumberFrameworkTemplate/cucumber_ParallelExecution/src/test/resources/Functional/Login.feature:27)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" >
+                <span>hooks.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>This scenario will test login feature of the application</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -142,10 +192,10 @@
         <textarea disabled class="code-block">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
   (Session info: chrome=100.0.4896.75): Wrong password.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LHTU05CG14642DH', ip: '10.190.48.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'LHTU05CG14642DH', ip: '10.97.65.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\atiwar12\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0d97517e437cfd5701f94de4fb783a24
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\atiwar12\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54497}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e36feeeba0cedb8a51a8a75a3e0053b
 *** Element info: {Using=id, value=nameofuser}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -159,8 +209,8 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy19.getText(Unknown Source)
-	at pageObjects.LandingPage.loginVerification(LandingPage.java:143)
-	at stepDefinitions.LoginSteps.user_should_be_loggedin_successfully(LoginSteps.java:70)
+	at pageObjects.LandingPage.loginVerification(LandingPage.java:123)
+	at stepDefinitions.LoginSteps.user_should_be_loggedin_successfully(LoginSteps.java:84)
 	at ?.User should be loggedin successfully(file:///C:/Users/atiwar12/Documents/CucumberFrameworkTemplate/cucumber_ParallelExecution/src/test/resources/Functional/Login.feature:34)
 </textarea>
       
@@ -174,32 +224,6 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
     
     </div></div>
 </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>This scenario will test signup feature of the application</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_navigates_to_application_landing_page()">
-                <span>Given User navigates to application landing page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_perform_signup_process_with_valid_user_name_and_password()">
-                <span>When User perform signup process with valid userName and password</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.LoginSteps.user_should_be_signedup_successfully()">
-                <span>Then User should be signedup successfully</span>
-      <div>
-      </div>
               </div>
           </div>
         </div>
@@ -220,10 +244,46 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:39:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Then User should be signedup successfully</a>
+<div class="">
+<span class="badge badge-default">This feature is used to test functionlaities availble on landing page.This scenario will test signup feature of the application.Then User should be signedup successfully</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -248,7 +308,7 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:37:16 PM</td>
+<td>20:39:58 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='9'>Then User should be loggedin successfully</a>
 <div class="">
@@ -300,9 +360,9 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:36:47 PM</td>
+<td>20:39:36 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>This scenario will test login feature of the application</a>
+<a href="#" class="linked" test-id='1' id='3'>This scenario will test login feature of the application</a>
 <div class="">
 <span class="badge badge-default">This feature is used to test functionlaities availble on landing page.This scenario will test login feature of the application</span>
 </div>
@@ -315,7 +375,7 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@signup</p>
 <p class="duration text-sm">1 tests</p>
@@ -323,7 +383,7 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
 <div class="test-contents d-none">
 <div class="info">
 <h4>@signup</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -334,11 +394,11 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:36:47 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:39:36 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>This scenario will test signup feature of the application</a>
+<a href="#" class="linked" test-id='1' id='2'>This scenario will test signup feature of the application</a>
 <div class="">
 <span class="badge badge-default">This feature is used to test functionlaities availble on landing page.This scenario will test signup feature of the application</span>
 </div>
@@ -361,13 +421,13 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 8, 2022 12:36:47 PM</h3>
+<h3>Apr 11, 2022 08:39:36 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 8, 2022 12:37:23 PM</h3>
+<h3>Apr 11, 2022 08:40:02 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -418,9 +478,9 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='50%'><b>1</b> scenarios failed,
+<small data-tooltip='100%'><b>2</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -438,9 +498,9 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='85%'><b>6</b> steps passed</small></div>
+<div><small data-tooltip='75%'><b>6</b> steps passed</small></div>
 <div>
-<small data-tooltip='14%'><b>1</b> steps failed,
+<small data-tooltip='25%'><b>2</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -457,7 +517,7 @@ Session ID: 0d97517e437cfd5701f94de4fb783a24
 </div></div>
 <script>
 var timeline = {
-"This feature is used to test functionlaities availble on landing page":32.623
+"This feature is used to test functionlaities availble on landing page":25.75
 };
 </script>
 <div class="row">
@@ -476,11 +536,11 @@ var timeline = {
 </tr>
 <tr>
 <td>@signup</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -496,14 +556,14 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 1,
+passChild: 0,
+failChild: 2,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
 passGrandChild: 6,
-failGrandChild: 1,
+failGrandChild: 2,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,

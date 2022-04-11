@@ -14,6 +14,8 @@ import javax.imageio.ImageIO;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 
+import logs.Log;
+
 public class CommonFunctions {
 	
 	 WebDriver driver;

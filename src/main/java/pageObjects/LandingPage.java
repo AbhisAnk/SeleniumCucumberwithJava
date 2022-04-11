@@ -10,9 +10,8 @@ import org.openqa.selenium.support.PageFactory;
  
 import org.testng.Assert;
 
- 
+import logs.Log;
 import resources.CommonFunctions;
-import resources.Log;
 
 
 
@@ -95,7 +94,7 @@ public class LandingPage {
 		String actualAlertMessage = alert.getText();
 		
 		Log.info("Alert receieved.");
-		System.out.println("SignUp AlertMessage: "+actualAlertMessage);
+		//System.out.println("SignUp AlertMessage: "+actualAlertMessage);
 		CommonFunctions.takeSnapshot("singup_AlertMessage");
 		alert.accept();
 		Assert.assertEquals(actualAlertMessage,expectedAlertMessage);
@@ -124,7 +123,7 @@ public class LandingPage {
 		String acutalUserID = userID.getText();
 		
 		Assert.assertEquals(expectedUserID, acutalUserID);
-		System.out.println("Login successful");
+		//System.out.println("Login successful");
 		
 		
 		

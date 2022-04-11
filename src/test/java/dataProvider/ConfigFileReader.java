@@ -21,18 +21,18 @@ public class ConfigFileReader {
 		try {
 			reader = new BufferedReader(new FileReader(propertyFilePath));
 			properties = new Properties();
-			System.out.println("propertyFilePath: "+propertyFilePath);
+			//System.out.println("propertyFilePath: "+propertyFilePath);
 			try {
 				properties.load(reader);
 				 reader.close();
-				 System.out.println("property loaded");
+				// System.out.println("property loaded");
 			} catch (IOException e) {
-				System.out.println("prop setup error: ");
+			//	System.out.println("prop setup error: ");
 			 e.printStackTrace();
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-			System.out.println("prop catch error: ");
+			//System.out.println("prop catch error: ");
 			throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
 		}		
 	}
@@ -62,7 +62,7 @@ public class ConfigFileReader {
 	
 	public String getApplicationUrl() {
 		String url = properties.getProperty("appURL");
-		System.out.println("url: "+url);
+		//System.out.println("url: "+url);
 		if(url != null) return url;
 		else throw new RuntimeException("appURL not specified in the Configuration.properties file.");
 	}
@@ -101,7 +101,7 @@ public class ConfigFileReader {
 	public String getSignupUserName() {
 		
 		String signupID = properties.getProperty("signupID");
-		System.out.println("signupID"+signupID);
+		//System.out.println("signupID"+signupID);
 		if(signupID != null) return signupID;
 		else throw new RuntimeException("signupID not specified in the Configuration.properties file.");
 		
@@ -111,7 +111,7 @@ public class ConfigFileReader {
 	public String getSingupPassword() {
 		
 		String signupPassword = properties.getProperty("signupPassword");
-		System.out.println("signupPassword: "+signupPassword);
+		//System.out.println("signupPassword: "+signupPassword);
 		if(signupPassword != null) return signupPassword;
 		else throw new RuntimeException("signupPassword not specified in the Configuration.properties file.");
 		
@@ -120,7 +120,7 @@ public class ConfigFileReader {
 	public String getLoginUserName() {
 		
 		String loginID = properties.getProperty("loginID");
-		System.out.println("loginID: "+loginID);
+		//System.out.println("loginID: "+loginID);
 		if(loginID != null) return loginID;
 		else throw new RuntimeException("loginID not specified in the Configuration.properties file.");
 		
@@ -130,7 +130,7 @@ public class ConfigFileReader {
 	public String getLoginPassword() {
 		
 		String loginPassword = properties.getProperty("loginPassword");
-		System.out.println("loginPassword: "+loginPassword);
+		//System.out.println("loginPassword: "+loginPassword);
 		if(loginPassword != null) return loginPassword;
 		else throw new RuntimeException("loginPassword not specified in the Configuration.properties file.");
 		
@@ -139,7 +139,7 @@ public class ConfigFileReader {
 	public String getReportConfigPath(){
 		String reportConfigPath = properties.getProperty("reportConfigPath");
 		if(reportConfigPath!= null) {
-			System.out.println("reportConfigPath1: "+reportConfigPath);
+		//	System.out.println("reportConfigPath1: "+reportConfigPath);
 			return reportConfigPath;
 		}
 		else throw new RuntimeException("Report Config Path not specified in the Configuration.properties file for the Key:reportConfigPath");		
