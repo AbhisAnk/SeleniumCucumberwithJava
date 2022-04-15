@@ -7,7 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
- 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import logs.Log;
@@ -18,12 +19,14 @@ import resources.CommonFunctions;
 public class LandingPage {
 	
 	 WebDriver driver;
+	 WebDriverWait wait;
 	 
 	
 	public LandingPage(WebDriver driver) {
 		
 		this.driver = driver;
 		 PageFactory.initElements(driver, this);
+		 wait = new WebDriverWait(driver, 15);
 		
 	}
 	
@@ -112,18 +115,21 @@ public class LandingPage {
 		Log.info("login password provided: "+password);
 		loginButton.click();
 		Log.info("login button clicked.");
-		Thread.sleep(5000);
+		wait.until(ExpectedConditions.textToBePresentInElement(userID, "Welcome "+userID));
 		
 	}
 	
 	
-	public void loginVerification(String loginID) {
+	public void loginVerification(String loginID) throws InterruptedException {
 		
-		String expectedUserID = "Welcome "+	loginID;
+		String expectedLoginUserID = "Welcome "+	loginID;
+		Log.info("expectedLoginUserID: "+expectedLoginUserID);
+		
 		String acutalUserID = userID.getText();
-		
-		Assert.assertEquals(expectedUserID, acutalUserID);
-		//System.out.println("Login successful");
+		Log.info("actualLoggedInUserID: "+acutalUserID);
+		 
+		Assert.assertEquals(acutalUserID,expectedLoginUserID);
+		Log.info("Login verification successfull");
 		
 		
 		

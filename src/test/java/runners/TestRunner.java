@@ -11,10 +11,12 @@ import io.cucumber.testng.CucumberOptions;
 		,plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		,monochrome = true
 		,publish = true
+		,tags = "@login"
 		
 		)
 public class TestRunner extends AbstractTestNGCucumberTests {
 	
+	//Below block is to run scenarios in a feature in parallel mode
 	
 	@Override
     @DataProvider(parallel = true)

@@ -29,11 +29,11 @@ public class Hooks {
 	
 	@After(order=1)
 	public void addScreenshot(Scenario scenario) throws IOException, InterruptedException {
-		if(scenario.isFailed()) {
+		//if(scenario.isFailed()) {
 		  File screenshot = ((TakesScreenshot)  testContext.getWebDriverManager().getDriver()).getScreenshotAs(OutputType.FILE);
 		  byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
 		  scenario.attach(fileContent, "image/png", "screenshot");
-		}
+		//}
 		Thread.sleep(2000);
 	}
 

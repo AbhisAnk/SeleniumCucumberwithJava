@@ -1,42 +1,11 @@
-[INFO ] 2022-04-11 20:39:45.228 [TestNG-PoolService-0] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:39:45.232 [TestNG-PoolService-0] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:39:45.232 [TestNG-PoolService-0] Log - $$$$$$$$$$$$$$$$$$$$$                 signup feature       $$$$$$$$$$$$$$$$$$$$$$$$$
-[INFO ] 2022-04-11 20:39:45.232 [TestNG-PoolService-0] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:39:45.232 [TestNG-PoolService-0] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:39:45.780 [TestNG-PoolService-1] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:39:45.781 [TestNG-PoolService-1] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:39:45.781 [TestNG-PoolService-1] Log - $$$$$$$$$$$$$$$$$$$$$                 signup feature       $$$$$$$$$$$$$$$$$$$$$$$$$
-[INFO ] 2022-04-11 20:39:45.781 [TestNG-PoolService-1] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:39:45.781 [TestNG-PoolService-1] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:39:53.236 [TestNG-PoolService-0] Log - navigated to appURL: https://www.demoblaze.com/
-[INFO ] 2022-04-11 20:39:53.333 [TestNG-PoolService-0] Log - signupLink clicked
-[INFO ] 2022-04-11 20:39:53.437 [TestNG-PoolService-1] Log - navigated to appURL: https://www.demoblaze.com/
-[INFO ] 2022-04-11 20:39:53.505 [TestNG-PoolService-1] Log - login link clicked
-[INFO ] 2022-04-11 20:39:53.555 [TestNG-PoolService-0] Log - username given: alphfemale99
-[INFO ] 2022-04-11 20:39:53.648 [TestNG-PoolService-0] Log - password given: alphfemale99
-[INFO ] 2022-04-11 20:39:53.719 [TestNG-PoolService-0] Log - signupButton clicked
-[INFO ] 2022-04-11 20:39:53.719 [TestNG-PoolService-1] Log - login username provided: alphfemale23
-[INFO ] 2022-04-11 20:39:53.783 [TestNG-PoolService-1] Log - login password provided: alphfemale23 
-[INFO ] 2022-04-11 20:39:53.832 [TestNG-PoolService-1] Log - login button clicked.
-[INFO ] 2022-04-11 20:39:59.755 [TestNG-PoolService-0] Log - Alert receieved.
-[INFO ] 2022-04-11 20:43:38.645 [TestNG-PoolService-0] Log - navigated to appURL: https://www.demoblaze.com/
-[INFO ] 2022-04-11 20:43:38.660 [TestNG-PoolService-0] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:43:38.661 [TestNG-PoolService-0] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:43:38.661 [TestNG-PoolService-0] Log - $$$$$$$$$$$$$$$$$$$$$                 signup test case       $$$$$$$$$$$$$$$$$$$$$$$$$
-[INFO ] 2022-04-11 20:43:38.661 [TestNG-PoolService-0] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:43:38.661 [TestNG-PoolService-0] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:43:38.717 [TestNG-PoolService-0] Log - signupLink clicked
-[INFO ] 2022-04-11 20:43:38.920 [TestNG-PoolService-0] Log - username given: alphfemale99
-[INFO ] 2022-04-11 20:43:38.987 [TestNG-PoolService-0] Log - password given: alphfemale99
-[INFO ] 2022-04-11 20:43:39.040 [TestNG-PoolService-0] Log - signupButton clicked
-[INFO ] 2022-04-11 20:43:39.684 [TestNG-PoolService-1] Log - navigated to appURL: https://www.demoblaze.com/
-[INFO ] 2022-04-11 20:43:39.686 [TestNG-PoolService-1] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:43:39.686 [TestNG-PoolService-1] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:43:39.686 [TestNG-PoolService-1] Log - $$$$$$$$$$$$$$$$$$$$$                 login test case       $$$$$$$$$$$$$$$$$$$$$$$$$
-[INFO ] 2022-04-11 20:43:39.687 [TestNG-PoolService-1] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:43:39.687 [TestNG-PoolService-1] Log - ****************************************************************************************
-[INFO ] 2022-04-11 20:43:39.794 [TestNG-PoolService-1] Log - login link clicked
-[INFO ] 2022-04-11 20:43:40.002 [TestNG-PoolService-1] Log - login username provided: alphfemale23
-[INFO ] 2022-04-11 20:43:40.074 [TestNG-PoolService-1] Log - login password provided: alphfemale23 
-[INFO ] 2022-04-11 20:43:40.146 [TestNG-PoolService-1] Log - login button clicked.
-[INFO ] 2022-04-11 20:43:45.053 [TestNG-PoolService-0] Log - Alert receieved.
+[INFO ] 2022-04-15 14:55:10.702 [main] Log - appURL: https://www.demoblaze.com/
+[INFO ] 2022-04-15 14:55:31.060 [main] Log - navigated to appURL: https://www.demoblaze.com/
+[INFO ] 2022-04-15 14:55:31.073 [main] Log - ****************************************************************************************
+[INFO ] 2022-04-15 14:55:31.074 [main] Log - ****************************************************************************************
+[INFO ] 2022-04-15 14:55:31.074 [main] Log - $$$$$$$$$$$$$$$$$$$$$                 login test case       $$$$$$$$$$$$$$$$$$$$$$$$$
+[INFO ] 2022-04-15 14:55:31.074 [main] Log - ****************************************************************************************
+[INFO ] 2022-04-15 14:55:31.074 [main] Log - ****************************************************************************************
+[INFO ] 2022-04-15 14:55:31.139 [main] Log - login link clicked
+[INFO ] 2022-04-15 14:55:31.313 [main] Log - login username provided: abti00
+[INFO ] 2022-04-15 14:55:31.367 [main] Log - login password provided: abti00
+[INFO ] 2022-04-15 14:55:31.421 [main] Log - login button clicked.

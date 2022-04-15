@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+
 
 import enums.DriverType;
 import enums.EnvironmentType;
@@ -53,6 +53,11 @@ public class WebDriverManager {
         	System.setProperty("webdriver.edge.driver",FileReaderManager.getInstance().getConfigReader().getDriverPath());
         	driver = new EdgeDriver();
     		break;
+    		
+        case EDGE : 
+        	System.setProperty("webdriver.edge.driver",FileReaderManager.getInstance().getConfigReader().getDriverPath());
+        	driver = new EdgeDriver();
+    		break;	
         }
 
         if(FileReaderManager.getInstance().getConfigReader().getBrowserWindowSize()) driver.manage().window().maximize();
