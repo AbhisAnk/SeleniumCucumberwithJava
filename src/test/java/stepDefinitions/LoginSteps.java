@@ -34,19 +34,15 @@ public class LoginSteps {
 		
 		
 	@When("User perform signup process with valid userName and password")
-	public void user_perform_signup_process_with_valid_user_name_and_password() {
+	public void user_perform_signup_process_with_valid_user_name_and_password() throws InterruptedException {
 		
 		Log.startTestCase("signup test case");
 		
-		try {
+		 
 			landingPage.doSignUP(FileReaderManager.getInstance().getConfigReader().getSignupUserName(), 
 					FileReaderManager.getInstance().getConfigReader().getSingupPassword());
 			
-		} catch (InterruptedException e) {
-			 
-			e.printStackTrace();
-		}
-	    
+			CommonFunctions.takeSnapshot("login_alert");
 	}
 
 	 
@@ -54,7 +50,13 @@ public class LoginSteps {
 	@Then("User should be signedup successfully")
 	public void user_should_be_signedup_successfully() throws InterruptedException {
 	     
-		landingPage.signupVerification();
+		try{
+			landingPage.signupVerification();
+		}
+		catch(Exception e) {
+			
+			Log.info("Exception occured in signup verification process. Exception: "+e);
+		}
 		Log.endTestCase("signup test case");
 	}
 
@@ -65,25 +67,24 @@ public class LoginSteps {
 	     
 	 Log.startTestCase("login test case");
 		
-		try {
+	 
 			landingPage.doLogin(FileReaderManager.getInstance().getConfigReader().getLoginUserName(), 
 					FileReaderManager.getInstance().getConfigReader().getLoginPassword());
-		}
-		catch (Exception e) {
-			
-			Log.info("LoginProcess failed");
+		 
 			CommonFunctions.takeSnapshot("login_alert");
 			
 			
-		}
+		 
 	
 	}
 
 	@Then("User should be loggedin successfully")
-	public void user_should_be_loggedin_successfully() {
+	public void user_should_be_loggedin_successfully() throws InterruptedException {
 
-		landingPage.loginVerification(FileReaderManager.getInstance().getConfigReader().getLoginUserName());
-		Log.info("login test case");
+	 
+			landingPage.loginVerification(FileReaderManager.getInstance().getConfigReader().getLoginUserName());
+	 
+			Log.endTestCase("Login Verification");
 	}
 	
 	

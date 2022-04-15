@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import enums.DriverType;
 import enums.EnvironmentType;
+import logs.Log;
 
 public class ConfigFileReader {
 	
@@ -42,8 +43,7 @@ public class ConfigFileReader {
 	public String getDriverPath(){
 		String projectPath = System.getProperty("user.dir");
 		String driverPath =   properties.getProperty("driverPath");
-		String driver = projectPath + driverPath;
-		if(driver!= null) return driver;
+		if(driverPath!= null) return projectPath + driverPath;
 		else throw new RuntimeException("driverPath not specified in the Configuration.properties file.");
 		 
 	}
@@ -62,7 +62,8 @@ public class ConfigFileReader {
 	
 	public String getApplicationUrl() {
 		String url = properties.getProperty("appURL");
-		//System.out.println("url: "+url);
+		System.out.println("url: "+url);
+		Log.info("appURL: "+url);
 		if(url != null) return url;
 		else throw new RuntimeException("appURL not specified in the Configuration.properties file.");
 	}
